@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 import joblib
 import extract_slots
+import os  # Added for dynamic port handling
 
 model = joblib.load("nlu_model.joblib")
-
 
 session_memory = {}
 
@@ -17,7 +17,6 @@ def nlu():
 
     if not user_text:
         return jsonify({"error": "No text provided"}), 400
-
 
     if session_id in session_memory and session_memory[session_id]["intent"] == "insertAppointment":
         intent = "insertAppointment"
@@ -71,4 +70,5 @@ def index():
     return "Welcome to the NLU API! Send a POST request to /nlu with 'text'."
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # For Railway
+    app.run(host="0.0.0.0", port=port)
