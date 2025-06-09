@@ -1,8 +1,12 @@
+
 [phases.setup]
-nixPkgs = ["python310Full", "nodejs_18"]
+nixPkgs = ["python310"]
 
 [phases.install]
-cmds = ["pip install -r requirements.txt", "npm ci"]
+cmds = [
+  "pip install -r requirements.txt",
+  "python -m spacy download en_core_web_sm"
+]
 
-[phases.start]
-cmd = "python3 app.py"
+[start]
+cmd = "python app.py"
