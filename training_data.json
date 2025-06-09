@@ -1,0 +1,63 @@
+[
+    {
+        "intent": "insertAppointment",
+        "examples": [
+            "Can you book an appointment for Mr. John for tomorrow at 3 PM?",
+            "I'd like to schedule a meeting with Sarah next Monday at 10 AM.",
+            "Please reserve a slot for me on Friday at 2 PM.",
+            "Book an appointment for Jane on the 5th at noon.",
+            "Can you set up a meeting with Dr. Smith for next Wednesday at 4 PM?",
+            "I need to book an appointment with Emily for the 10th at 11 AM.",
+            "Schedule a meeting for Mr. Brown on Thursday at 1 PM.",
+            "I'd like to book a slot with Mr. Davis for next Tuesday at 9 AM.",
+            "Please arrange an appointment for Ms. Taylor on the 15th at 3 PM.",
+            "Can you book a meeting with Mr. Wilson for tomorrow at 5 PM?",
+            "I want to schedule an appointment with Ms. Johnson for next Friday at 10 AM.",
+            "Book an appointment for Mr. Lee on the 20th at 2 PM.",
+            "Can you set up a meeting with Ms. Martinez for next Monday at 11 AM?",
+            "I'd like to reserve a slot with Mr. Anderson for the 25th at 4 PM.",
+            "Please book an appointment for Ms. Thomas on Wednesday at 1 PM."
+        ]
+    },
+    {
+        "intent": "checkAppointment",
+        "examples": [
+            "When is my appointment?",
+            "Do I have anything scheduled?",
+            "Check my appointments.",
+            "Did i book any  appointments ",
+            "Can you tell me when my next meeting is?",
+            "I need to know the date and time of my appointment.",
+            "What time is my appointment with Mr. John?",
+            "Do I have any meetings scheduled for tomorrow?",
+            "Can you check if I have an appointment with Sarah next week?",
+            "Please tell me the details of my upcoming appointments.",
+            "I want to know if I have any appointments scheduled for Friday.",
+            "Can you check my calendar for any meetings?",
+            "Do I have an appointment with Dr. Smith this week?",
+            "What time is my meeting with Emily?",
+            "Can you tell me if I have any appointments on the 10th?",
+            "Check if I have a meeting with Mr. Brown on Thursday."
+        ]
+    },
+    {
+        "intent": "deleteAppointment",
+        "examples": [
+            "Cancel my meeting.",
+            "Delete my appointment.",
+            "I want to cancel it.",
+            "Please cancel my appointment with Mr. John.",
+            "Can you delete my meeting with Sarah?",
+            "I need to cancel my appointment for tomorrow.",
+            "Cancel my slot with Dr. Smith.",
+            "Delete my appointment with Emily on the 10th.",
+            "I want to cancel my meeting with Mr. Brown.",
+            "Please cancel my appointment for next Friday.",
+            "Can you delete my meeting with Ms. Johnson?",
+            "I need to cancel my appointment with Mr. Lee.",
+            "Cancel my slot with Ms. Martinez.",
+            "Delete my appointment with Mr. Anderson.",
+            "I want to cancel my meeting with Ms. Thomas."
+        ]
+    }
+]
